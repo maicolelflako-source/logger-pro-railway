@@ -1,0 +1,14 @@
+{
+  "name": "logger-pro-railway",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node --require ./tracing.js server.js"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/sdk-node": "^0.52.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.48.0"
+  }
+}
